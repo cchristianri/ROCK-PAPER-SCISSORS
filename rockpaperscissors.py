@@ -8,8 +8,9 @@
 counter1 = 0
 counter2 = 0
 round = 1
+isPlaying = True
 print("=== ROCK PAPER SCISSORS ===")
-while True:
+while isPlaying:
     print ("Players can either choose R, P, S. FIRST TO 3, begin")
     print("ROUND",round)
     player1 = input("Player 1 : ")
@@ -40,7 +41,7 @@ while True:
             print("Come Back Soon!")
             break
         else:
-            round = 0
+            round = 1
             counter1 = 0
             counter2 = 0
 
@@ -50,7 +51,7 @@ while True:
         leave = input("If you want to close game press Y otherwise game will continue : ")
         if leave == "Y":
             print("Come Back Soon!")
-            break
+            isPlaying = False
         else:
             round = 1
             counter1 = 0
