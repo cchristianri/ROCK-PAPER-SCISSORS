@@ -35,7 +35,7 @@ while True:
 
     if counter1 == 3:
         print("player 1 WINS the score was",counter1,"-",counter2)
-        leave = input("If you want to play again press Y otherwise game will end : ")
+        leave = input("If you want to close game press Y otherwise game will continue : ")
         if leave == "Y":
             print("Come Back Soon!")
             break
@@ -47,7 +47,7 @@ while True:
 
     if counter2 == 3:
         print("player 2 WINS the score was", counter1, "-", counter2)
-        leave = input("If you want to play again press Y otherwise game will end : ")
+        leave = input("If you want to close game press Y otherwise game will continue : ")
         if leave == "Y":
             print("Come Back Soon!")
             break
